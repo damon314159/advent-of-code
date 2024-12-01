@@ -3,21 +3,11 @@
   "version": "1.0.0",
   "author": "",
   "license": "MIT",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "description": "",
   "devDependencies": {
-    "eslint": "^8.55.0",
+    "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-import": "^2.29.0"
-  },
-  "dependencies": {
-    "fs": "^0.0.1-security",
-    "interpolating-polynomial": "^1.1.2",
-    "math.js": "^1.1.46",
-    "mathjs": "^12.1.0"
+    "eslint-plugin-import": "^2.29.0",
+    "prettier": "^3.4.1"
   }
 }
