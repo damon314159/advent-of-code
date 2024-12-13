@@ -7,6 +7,7 @@
   ],
   "plugins": ["import"],
   "rules": {
-    "no-console": "off"
+    "no-console": "off",
+    "no-continue": "off"
   }
 }
