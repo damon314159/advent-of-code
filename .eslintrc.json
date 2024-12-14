@@ -8,6 +8,7 @@
   "plugins": ["import"],
   "rules": {
     "no-console": "off",
-    "no-continue": "off"
+    "no-continue": "off",
+    "no-param-reassign": ["error", { "props": false }]
   }
 }
