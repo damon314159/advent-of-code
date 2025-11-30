@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/recommended",
+    "airbnb-base",
+    "prettier"
+  ],
+  "plugins": ["import"],
+  "rules": {
+    "no-console": "off",
+    "no-continue": "off",
+    "no-param-reassign": ["error", { "props": false }]
+  }
+}
