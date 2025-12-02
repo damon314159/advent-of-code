@@ -2,3 +2,4 @@ node_modules/
 .vscode/
 .idea/
 **/data.txt
+dist-newstyle/

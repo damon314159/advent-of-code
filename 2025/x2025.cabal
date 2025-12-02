@@ -1,0 +1,40 @@
+cabal-version:      3.0
+name:               x2025
+version:            0.1.0.0
+author:             Damon
+build-type:         Simple
+
+library
+    hs-source-dirs:   lib
+    exposed-modules:  Advent.Utils
+    build-depends:    base >=4.7 && <5
+    default-language: Haskell2010
+    ghc-options:      -Wall
+
+common deps
+    default-extensions:
+        TypeApplications
+      , TupleSections
+      , NumericUnderscores
+      , NamedFieldPuns
+    build-depends:
+        base >=4.7 && <5
+      , x2025
+      , extra
+      , containers
+      , parallel
+
+common warnings
+    ghc-options: -Wall
+
+executable 01
+    import:           deps
+    main-is:          solution.hs
+    hs-source-dirs:   01
+    default-language: Haskell2010
+
+executable 02
+    import:           deps
+    main-is:          solution.hs
+    hs-source-dirs:   02
+    default-language: Haskell2010
