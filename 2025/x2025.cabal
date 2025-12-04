@@ -5,9 +5,17 @@ author:             Damon
 build-type:         Simple
 
 library
+    default-extensions:
+        TypeApplications
+      , TupleSections
+      , NumericUnderscores
+      , NamedFieldPuns
     hs-source-dirs:   lib
     exposed-modules:  Advent.Utils
-    build-depends:    base >=4.7 && <5
+    build-depends:
+        base >=4.7 && <5
+      , extra
+      , containers
     default-language: Haskell2010
     ghc-options:      -Wall
 
@@ -43,4 +51,10 @@ executable 03
     import:           deps
     main-is:          solution.hs
     hs-source-dirs:   03
+    default-language: Haskell2010
+
+executable 04
+    import:           deps
+    main-is:          solution.hs
+    hs-source-dirs:   04
     default-language: Haskell2010
