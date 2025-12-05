@@ -1,6 +1,5 @@
 module Advent.Utils
   ( properFactors,
-    wordsWhen,
     splitAll,
     Grid,
     parseGrid,
@@ -20,14 +19,6 @@ properFactors num = go num [1 .. num `div` 2]
       if n `mod` divisor == 0
         then divisor : go n divisors
         else go n divisors
-
--- | Same as Prelude.words but accepts a predicate instead of only matching ' '
-wordsWhen :: (Char -> Bool) -> String -> [String]
-wordsWhen p s = case dropWhile p s of
-  "" -> []
-  s' -> w : wordsWhen p s''
-    where
-      (w, s'') = break p s'
 
 -- | Generalises Prelude.splitAt to split a string into many sections of length n
 splitAll :: Int -> String -> [String]

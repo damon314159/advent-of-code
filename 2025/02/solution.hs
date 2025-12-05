@@ -1,5 +1,5 @@
-import Advent.Utils (properFactors, splitAll, wordsWhen)
-import Data.List.Extra (allSame)
+import Advent.Utils (properFactors, splitAll)
+import Data.List.Extra (allSame, splitOn)
 import System.Environment (getArgs)
 
 type Range = (Int, Int)
@@ -9,7 +9,7 @@ type Input = [Range]
 type Solution = Int
 
 parser :: String -> Input
-parser = map ((\(start, end) -> (read start, read $ tail end)) . break (== '-')) . wordsWhen (== ',')
+parser = map ((\(start, end) -> (read start, read $ tail end)) . break (== '-')) . splitOn ","
 
 solve1 :: Input -> Solution
 solve1 = foldr sumRange 0
