@@ -76,3 +76,9 @@ executable 07
     main-is:          solution.hs
     hs-source-dirs:   07
     default-language: Haskell2010
+
+executable 08
+    import:           deps
+    main-is:          solution.hs
+    hs-source-dirs:   08
+    default-language: Haskell2010
